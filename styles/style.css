@@ -25,13 +25,17 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: hsl(214, 17%, 92%);
-  margin: 0 auto;
+    width: clamp(290px, 50%, 26rem);
+    height: 60rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    margin: 0 auto;
 }
 
 .card {
@@ -78,12 +82,26 @@ img {
   border-radius: 50%;
 }
 
-@media (min-width: 1024px) {
-  .main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-  }
+@media (min-width: 64rem) {
+
+    body {
+        width: clamp(1100px, 100%, 98rem);
+        background-color: var(--grey-100);
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: clamp(1024px, 90%, 88rem);
+        height: 320px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 24px;
+    }
+  
   #dan {
     width: auto;
     height: auto;
