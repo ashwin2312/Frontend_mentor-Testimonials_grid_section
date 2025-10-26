@@ -1,0 +1,96 @@
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: hsl(214, 17%, 92%);
+}
+.card{
+    width: 320px;
+    height: fit-content;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    div{
+        line-height: 0.8rem;
+    }
+}
+#dan{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(214, 17%, 92%);
+}
+#jona{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(214, 17%, 92%);
+}
+#pat{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(214, 17%, 92%);
+}
+#kira, #jean{
+    background-color: white;
+    color: hsl(224, 10%, 45%);
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.testimonial-section{
+   
+}
+
+
+
+@media (min-width:1024px) {
+    .main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+    #dan{
+        width: auto;
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #jona{
+        width: auto;
+        height: auto;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    #pat{
+        width: auto;
+        height: auto;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #jean{
+        width: auto;
+        height: auto;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #kira{
+        width: auto;
+        height: auto;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
