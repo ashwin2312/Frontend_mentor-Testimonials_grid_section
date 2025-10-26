@@ -22,6 +22,7 @@ body {
     width: clamp(310px, 50% 48rem);
     min-block-size: 100vh;
     font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: clamp(13px, 0.7rem + 1vw, 1.1rem);
 }
 
 .main {
@@ -39,9 +40,8 @@ body {
 }
 
 .card {
-  width: 320px;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: clamp(251px, 50%, 24rem);
+  height: auto;
   padding: 1rem;
   border: 1px solid grey;
   border-radius: 10px;
