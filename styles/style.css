@@ -1,12 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barlow-semi-condensed-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-size: var(--font-size);
+    font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: var(--font-size);
+    font-style: normal;
+}
+
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
+    width: clamp(310px, 50% 48rem);
+    min-block-size: 100vh;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   background-color: hsl(214, 17%, 92%);
+  margin: 0 auto;
 }
 
 .card {
